@@ -1,0 +1,98 @@
+:root {
+  --blue-main: #0046be;
+  --light-gray: #f6f8fb;
+  --dark-grey: #f6f8fb;
+  --text: #2d2d2d;
+  --bg: white;
+}
+
+body {
+  background: var(--bg);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--light-gray);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header img {
+  width: 260;
+  height: 120;
+  animation: bounce 2s;
+}
+
+@keyframes bonce {
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  background: var(--blue-main);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #00a6ff;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.steps {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: none none none;
+  gap: none;
+}
+
+i {
+  color: var(--blue-main);
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.reviews {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+footer {
+  background: var(--blue-main);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: none;
+}
